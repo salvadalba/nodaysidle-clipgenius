@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+		project = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CLIPGENIUS_APP_TARGET = {
+						CreatedOnToolsVersion = 15.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = CLIPGENIUS_BUILD_CONFIG_LIST;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CLIPGENIUS_MAIN_GROUP;
+			productRefGroup = CLIPGENIUS_PRODUCTS_GROUP;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CLIPGENIUS_APP_TARGET,
+			);
+		};
+/* Begin PBXBuildRule section */
+/* End PBXBuildRule section */
+/* Begin PBXContainerItemProxy section */
+/* End PBXContainerItemProxy section */
+/* Begin PBXFileReference section */
+		CLIPGENIUS_APP_REF = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipGenius.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CLIPGENIUS_INFO_PLIST = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Resources/Info.plist; sourceTree = "<group>"; };
+		CLIPGENIUS_ENTITLEMENTS = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Resources/ClipGenius.entitlements; sourceTree = "<group>"; };
+		CLIPGENIUS_APP_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipGeniusApp.swift; sourceTree = "<group>"; };
+		CLIPBOARD_ITEM_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardItem.swift; sourceTree = "<group>"; };
+		PROJECT_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		TAG_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		CLIP_CATEGORY_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipCategory.swift; sourceTree = "<group>"; };
+		OUTPUT_FORMAT_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputFormat.swift; sourceTree = "<group>"; };
+		CLIP_MATCH_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipMatch.swift; sourceTree = "<group>"; };
+		MENU_BAR_VIEW_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		CLIP_ROW_VIEW_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipRowView.swift; sourceTree = "<group>"; };
+		SETTINGS_VIEW_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CLIPBOARD_MONITORING_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardMonitoring.swift; sourceTree = "<group>"; };
+		CLIPBOARD_MONITOR_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardMonitor.swift; sourceTree = "<group>"; };
+		SEMANTIC_SEARCHABLE_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemanticSearchable.swift; sourceTree = "<group>"; };
+		SEMANTIC_SEARCH_ENGINE_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemanticSearchEngine.swift; sourceTree = "<group>"; };
+		CATEGORIZING_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorizing.swift; sourceTree = "<group>"; };
+		CATEGORIZER_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorizer.swift; sourceTree = "<group>"; };
+		FORMATTING_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatting.swift; sourceTree = "<group>"; };
+		FORMATTER_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		CLIPBOARD_STORE_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardStore.swift; sourceTree = "<group>"; };
+		SWIFT_DATA_PERSISTENCE_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataPersistence.swift; sourceTree = "<group>"; };
+		LOGGER_SWIFT = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		ASSETS_XCASSETS = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+/* Begin PBXGroup section */
+		CLIPGENIUS_MAIN_GROUP = {
+			isa = PBXGroup;
+			children = (
+				CLIPGENIUS_CLIPGENIUS_GROUP,
+				CLIPGENIUS_PRODUCTS_GROUP,
+			);
+			sourceTree = "<group>";
+		};
+		CLIPGENIUS_CLIPGENIUS_GROUP = {
+			isa = PBXGroup;
+			children = (
+				CLIPGENIUS_APP_SWIFT,
+				CLIPGENIUS_MODELS_GROUP,
+				CLIPGENIUS_VIEWS_GROUP,
+				CLIPGENIUS_SERVICES_GROUP,
+				CLIPGENIUS_UTILS_GROUP,
+				CLIPGENIUS_RESOURCES_GROUP,
+			);
+			path = ClipGenius;
+			sourceTree = "<group>";
+		};
+		CLIPGENIUS_MODELS_GROUP = {
+			isa = PBXGroup;
+			children = (
+				CLIPBOARD_ITEM_SWIFT,
+				PROJECT_SWIFT,
+				TAG_SWIFT,
+				CLIP_CATEGORY_SWIFT,
+				OUTPUT_FORMAT_SWIFT,
+				CLIP_MATCH_SWIFT,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CLIPGENIUS_VIEWS_GROUP = {
+			isa = PBXGroup;
+			children = (
+				MENU_BAR_VIEW_SWIFT,
+				CLIP_ROW_VIEW_SWIFT,
+				SETTINGS_VIEW_SWIFT,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CLIPGENIUS_SERVICES_GROUP = {
+			isa = PBXGroup;
+			children = (
+				CLIPBOARD_MONITORING_SWIFT,
+				CLIPBOARD_MONITOR_SWIFT,
+				SEMANTIC_SEARCHABLE_SWIFT,
+				SEMANTIC_SEARCH_ENGINE_SWIFT,
+				CATEGORIZING_SWIFT,
+				CATEGORIZER_SWIFT,
+				FORMATTING_SWIFT,
+				FORMATTER_SWIFT,
+				CLIPBOARD_STORE_SWIFT,
+				SWIFT_DATA_PERSISTENCE_SWIFT,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CLIPGENIUS_UTILS_GROUP = {
+			isa = PBXGroup;
+			children = (
+				LOGGER_SWIFT,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CLIPGENIUS_RESOURCES_GROUP = {
+			isa = PBXGroup;
+			children = (
+				ASSETS_XCASSETS,
+				CLIPGENIUS_INFO_PLIST,
+				CLIPGENIUS_ENTITLEMENTS,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CLIPGENIUS_PRODUCTS_GROUP = {
+			isa = PBXGroup;
+			children = (
+				CLIPGENIUS_APP_REF,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+/* Begin PBXNativeTarget section */
+		CLIPGENIUS_APP_TARGET = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CLIPGENIUS_TARGET_BUILD_CONFIG_LIST;
+			buildPhases = (
+				CLIPGENIUS_SOURCES_BUILD_PHASE,
+				CLIPGENIUS_FRAMEWORKS_BUILD_PHASE,
+				CLIPGENIUS_RESOURCES_BUILD_PHASE,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClipGenius;
+			productName = ClipGenius;
+			productReference = CLIPGENIUS_APP_REF;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+/* Begin PBXBuildPhase section */
+		CLIPGENIUS_SOURCES_BUILD_PHASE = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CLIPGENIUS_APP_SWIFT_BUILD_FILE,
+				CLIPBOARD_ITEM_SWIFT_BUILD_FILE,
+				PROJECT_SWIFT_BUILD_FILE,
+				TAG_SWIFT_BUILD_FILE,
+				CLIP_CATEGORY_SWIFT_BUILD_FILE,
+				OUTPUT_FORMAT_SWIFT_BUILD_FILE,
+				CLIP_MATCH_SWIFT_BUILD_FILE,
+				MENU_BAR_VIEW_SWIFT_BUILD_FILE,
+				CLIP_ROW_VIEW_SWIFT_BUILD_FILE,
+				SETTINGS_VIEW_SWIFT_BUILD_FILE,
+				CLIPBOARD_MONITORING_SWIFT_BUILD_FILE,
+				CLIPBOARD_MONITOR_SWIFT_BUILD_FILE,
+				SEMANTIC_SEARCHABLE_SWIFT_BUILD_FILE,
+				SEMANTIC_SEARCH_ENGINE_SWIFT_BUILD_FILE,
+				CATEGORIZING_SWIFT_BUILD_FILE,
+				CATEGORIZER_SWIFT_BUILD_FILE,
+				FORMATTING_SWIFT_BUILD_FILE,
+				FORMATTER_SWIFT_BUILD_FILE,
+				CLIPBOARD_STORE_SWIFT_BUILD_FILE,
+				SWIFT_DATA_PERSISTENCE_SWIFT_BUILD_FILE,
+				LOGGER_SWIFT_BUILD_FILE,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CLIPGENIUS_FRAMEWORKS_BUILD_PHASE = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CLIPGENIUS_RESOURCES_BUILD_PHASE = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ASSETS_XCASSETS_BUILD_FILE,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXBuildPhase section */
+/* Begin PBXBuildFile section */
+		CLIPGENIUS_APP_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = CLIPGENIUS_APP_SWIFT; };
+		CLIPBOARD_ITEM_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = CLIPBOARD_ITEM_SWIFT; };
+		PROJECT_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = PROJECT_SWIFT; };
+		TAG_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = TAG_SWIFT; };
+		CLIP_CATEGORY_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = CLIP_CATEGORY_SWIFT; };
+		OUTPUT_FORMAT_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = OUTPUT_FORMAT_SWIFT; };
+		CLIP_MATCH_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = CLIP_MATCH_SWIFT; };
+		MENU_BAR_VIEW_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = MENU_BAR_VIEW_SWIFT; };
+		CLIP_ROW_VIEW_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = CLIP_ROW_VIEW_SWIFT; };
+		SETTINGS_VIEW_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = SETTINGS_VIEW_SWIFT; };
+		CLIPBOARD_MONITORING_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = CLIPBOARD_MONITORING_SWIFT; };
+		CLIPBOARD_MONITOR_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = CLIPBOARD_MONITOR_SWIFT; };
+		SEMANTIC_SEARCHABLE_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = SEMANTIC_SEARCHABLE_SWIFT; };
+		SEMANTIC_SEARCH_ENGINE_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = SEMANTIC_SEARCH_ENGINE_SWIFT; };
+		CATEGORIZING_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = CATEGORIZING_SWIFT; };
+		CATEGORIZER_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = CATEGORIZER_SWIFT; };
+		FORMATTING_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = FORMATTING_SWIFT; };
+		FORMATTER_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = FORMATTER_SWIFT; };
+		CLIPBOARD_STORE_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = CLIPBOARD_STORE_SWIFT; };
+		SWIFT_DATA_PERSISTENCE_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = SWIFT_DATA_PERSISTENCE_SWIFT; };
+		LOGGER_SWIFT_BUILD_FILE = {isa = PBXBuildFile; fileRef = LOGGER_SWIFT; };
+		ASSETS_XCASSETS_BUILD_FILE = {isa = PBXBuildFile; fileRef = ASSETS_XCASSETS; };
+/* End PBXBuildFile section */
+/* Begin XCBuildConfiguration section */
+		CLIPGENIUS_DEBUG_BUILD_CONFIG = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CLIPGENIUS_RELEASE_BUILD_CONFIG = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CLIPGENIUS_TARGET_DEBUG_BUILD_CONFIG = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ClipGenius/Resources/ClipGenius.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ClipGenius/Resources/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_SUDDEN_TERMINATION_ENABLED = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clipgenius.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDWebKit = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				SWIFTUI_ENABLE_XCODEPREVIEWS = YES;
+			};
+			name = Debug;
+		};
+		CLIPGENIUS_TARGET_RELEASE_BUILD_CONFIG = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ClipGenius/Resources/ClipGenius.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ClipGenius/Resources/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_SUDDEN_TERMINATION_ENABLED = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clipgenius.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDWebKit = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				SWIFTUI_ENABLE_XCODEPREVIEWS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+/* Begin XCConfigurationList section */
+		CLIPGENIUS_BUILD_CONFIG_LIST = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CLIPGENIUS_DEBUG_BUILD_CONFIG,
+				CLIPGENIUS_RELEASE_BUILD_CONFIG,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CLIPGENIUS_TARGET_BUILD_CONFIG_LIST = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CLIPGENIUS_TARGET_DEBUG_BUILD_CONFIG,
+				CLIPGENIUS_TARGET_RELEASE_BUILD_CONFIG,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = project;
+}

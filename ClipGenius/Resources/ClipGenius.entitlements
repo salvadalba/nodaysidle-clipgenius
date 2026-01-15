@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- App Sandbox -->
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
+	
+	<!-- Pasteboard access (read/write) -->
+	<key>com.apple.security.automation.apple-events</key>
+	<true/>
+	
+	<!-- File read access for image thumbnails -->
+	<key>com.apple.security.files.user-selected.read-only</key>
+	<true/>
+	
+	<!-- Outgoing network connections (disabled for privacy) -->
+	<key>com.apple.security.network.client</key>
+	<false/>
+	
+	<!-- Incoming network connections (disabled for privacy) -->
+	<key>com.apple.security.network.server</key>
+	<false/>
+</dict>
+</plist>
