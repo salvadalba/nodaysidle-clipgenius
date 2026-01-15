@@ -1,5 +1,7 @@
 # ClipGenius
 
+![ClipGenius Social Preview](assets/social-preview.png)
+
 An intelligent macOS clipboard manager that leverages on-device AI to automatically organize, search, and reuse clipboard content with contextual awareness and seamless workflow integration.
 
 > **[📖 Usage Instructions](INSTRUCTIONS.md)** - See the full user guide for how to use ClipGenius.
@@ -36,6 +38,7 @@ An intelligent macOS clipboard manager that leverages on-device AI to automatica
    - Add "Automation" entitlement for Apple Events (source app detection)
 
 3. Add all source files from this repository:
+
    ```
    ClipGenius/
    ├── Models/
